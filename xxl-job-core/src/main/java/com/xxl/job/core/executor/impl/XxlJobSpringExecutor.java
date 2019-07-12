@@ -58,7 +58,7 @@ public class XxlJobSpringExecutor extends XxlJobExecutor implements ApplicationC
     private static ApplicationContext applicationContext;
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        this.applicationContext = applicationContext;
+        XxlJobSpringExecutor.applicationContext = applicationContext;
     }
     public static ApplicationContext getApplicationContext() {
         return applicationContext;
